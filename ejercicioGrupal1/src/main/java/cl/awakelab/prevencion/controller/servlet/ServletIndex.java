@@ -10,6 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * EjercicioGrupal 1 - Modulo 5 
+ * Integrantes:
+ * -Cesar Albornoz
+ * -Catalina Muñoz
+ * -Jaime Godoy
+ * -Anthony Flores
+ * 
+ *  */
+
+/**
  * Servlet implementation class ServletIndex
  */
 @WebServlet("/ServletIndex")
