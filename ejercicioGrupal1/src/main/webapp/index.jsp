@@ -11,9 +11,9 @@
 	<body>
 		<div class="container">
 
-			<div class="row mt-4" style="justify-content: space-around; width: 700px;">
+			<div class="row mt-4" style="justify-content: space-around;">
 				<h1 class="text-center">Sistema</h1>
-				<p>Sistema de información que permitirá administrar los rincipales procesos que se llevan
+				<p class="text-center">Sistema de información que permitirá administrar los rincipales procesos que se llevan
 					a cabo día a día</p>
 								
 					<div class="card col-s-12 col-6 offset-1 mb-2 " style="  width: 15rem;">
