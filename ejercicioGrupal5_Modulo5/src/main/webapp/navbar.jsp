@@ -33,9 +33,11 @@
      <c:if test="${not empty sessionScope.usuario}">
      	<p class="mx-3 my-2"> Bienvenido(a) <span class="fw-bold text-capitalize"> ${sessionScope.usuario}</span></p>
      	<div class="row col-sm-3 col-l-2" style="justify-content: space-around;">
-     	<form  action="ServletLogout" method="post">
+     	
+     		<a href="ServletLogout">
      		<button class="btn btn-outline-danger " type="submit"> Cerrar Session</button>
-     	</form>
+     		</a>
+     	
      	</div>
      </c:if>
      

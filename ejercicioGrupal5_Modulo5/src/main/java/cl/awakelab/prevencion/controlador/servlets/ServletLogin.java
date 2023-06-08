@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * EjercicioGrupal 4 - Modulo 5 
+ * EjercicioGrupal 5 - Modulo 5 
  * Integrantes:
  * -Cesar Albornoz
  * -Catalina Muñoz

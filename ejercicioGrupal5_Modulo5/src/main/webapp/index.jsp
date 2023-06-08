@@ -37,7 +37,7 @@
 							
 							<p class="card-text">Reserva una capacitación cuando quieras. </p> 							
 							<a href="crearCapacitacion.jsp" class="btn btn-primary d-grid gap-2">Crear Capacitacion</a>
-							<a href="listar-capacitaciones.jsp" class="btn btn-secondary d-grid gap-2 mt-1">Listar Capacitaciones</a>
+							<a href="ServletListarCapacitaciones" class="btn btn-secondary d-grid gap-2 mt-1">Listar Capacitaciones</a>
 				
 						</div>
 					</div>

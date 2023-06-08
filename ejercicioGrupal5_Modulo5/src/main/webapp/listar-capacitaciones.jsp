@@ -1,3 +1,5 @@
+<%@page import="cl.awakelab.prevencion.modelo.Capacitacion"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -5,7 +7,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"  rel="stylesheet">
-		<title>Listar Capacitaciones</title>
+		<title>Listado de  Capacitaciones</title>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
@@ -19,6 +21,42 @@
 				Listado de capacitaciones
 			</h1>
 			
+			<!-- Tabla -->
+		      <table class="table table-striped table-hover">
+		        <thead class="table-dark">
+		        <tr>
+		          
+		          <th scope="col">Rut de Cliente</th>
+		          <th scope="col">Día</th>
+		          <th scope="col">Hora</th>
+		          <th scope="col">Lugar</th>
+		          <th scope="col">Dureción</th>
+		          <th scope="col">Cantidad de Asistentes</th>
+		        </tr>
+		        </thead>
+		        
+		        <tbody class="table-group-divider">
+		        <!-- row = fila -->
+		        
+		 		<% List<Capacitacion> capacitaciones =(List<Capacitacion>)request.getAttribute("capacitaciones"); 
+		 			if(capacitaciones != null) {		 		
+		 			 for(Capacitacion cap: capacitaciones) { 
+		 			 %>
+		        <tr>
+		          <td><%=cap.getRutCliente()%></td>
+		          <td><%=cap.getDia()%></td>
+		          <td><%=cap.getHora()%></td>
+		          <td><%=cap.getLugar()%></td>
+		          <td><%=cap.getDuracion()%></td>
+		          <td><%=cap.getCantidadDeAsistentes()%></td>
+		        </tr>
+		        
+		   		<% }
+		   		} %>
+		        </tbody>
+		        
+		      </table>
+					
 			</div>
 			
 
