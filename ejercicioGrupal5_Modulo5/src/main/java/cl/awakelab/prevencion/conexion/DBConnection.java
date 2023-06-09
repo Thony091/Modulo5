@@ -10,7 +10,7 @@ public class DBConnection {
   private static final String LOGIN = "prevencion";
   private static final String PASSWORD = "projectprevencion";
   private static final String URL_CONEXION = "jdbc:mysql://localhost:"+PORT+"/"+DB;
-  // jdbc:mysql://localhost:3306/bootcamp
+  // jdbc:mysql://localhost:3306/prevencion
   
   // PATRON SINGLETON
   private static DBConnection instance = null;

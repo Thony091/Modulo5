@@ -30,7 +30,7 @@
 		          <th scope="col">Día</th>
 		          <th scope="col">Hora</th>
 		          <th scope="col">Lugar</th>
-		          <th scope="col">Dureción</th>
+		          <th scope="col">Duración</th>
 		          <th scope="col">Cantidad de Asistentes</th>
 		        </tr>
 		        </thead>

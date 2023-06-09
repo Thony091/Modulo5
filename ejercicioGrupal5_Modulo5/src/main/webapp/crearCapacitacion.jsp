@@ -7,6 +7,7 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"  rel="stylesheet">
 		<title>Capacitación</title>
 		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/app.js"></script>
 	</head>
 	<body>
 		<!-- Navbar -->
@@ -21,7 +22,7 @@
 
 				  <h2 class="offset-1 col-10 fs-1 text-center"><strong> Crear capacitacion </strong></h2>
 				  
-				  <form action="ServletCrearCapacitacion" method="POST" class="offset-1 col-10 form mb-2 mt-3">
+				  <form id="form-capacitacion" action="ServletCrearCapacitacion" method="POST" class="offset-1 col-10 form mb-2 mt-3">
 					<div class="form-group fs-3 mt-4">
 						<label for="rutCliente">Rut de cliente:</label>
 						<input 
@@ -30,7 +31,7 @@
 							id="rutCliente" 
 							placeholder="88.231.332-k"
 							name="rutCliente"
-							required>
+							>
 						<small id="rutClienteHelp" class=" form-text text-danger"> </small>
 					</div>
 		  
@@ -42,6 +43,7 @@
 						  id="dia"
 						  placeholder="Lunes, Martes, Mier..."
 						  name="dia"
+						  
 						   >		  
 					  <small id="diaHelp" class=" form-text text-danger"> </small>
 					</div> 
@@ -54,6 +56,7 @@
 					  		id="hora" 
 					  		placeholder="HH:MM"
 					  		name="hora"
+					  		
 					  		>
 					  <small id="horaHelp" class=" form-text text-danger"> </small>
 					</div>   
@@ -65,6 +68,7 @@
 					  		id="lugar" 
 					  		placeholder="-"
 					  		name="lugar"
+					  		
 					  		>
 					  <small id="lugarHelp" class=" form-text text-danger"> </small>
 					</div>   
@@ -76,6 +80,7 @@
 					  		id="duracion" 
 					  		placeholder="X horas"
 					  		name="duracion"
+					  		
 					  		>
 					  <small id="duracionHelp" class=" form-text text-danger"> </small>
 					</div>   
@@ -85,24 +90,26 @@
 					  		type="number" 
 					  		class="form-control fs-4" 
 					  		id="cantAsistentes" 
-					  		placeholder="-"
+					  		placeholder="0"
 					  		name="cantAsistentes"
+					  		value="0"
 					  		>
 					  <small id="cantAsistentesHelp" class=" form-text text-danger"> </small>
 					</div>
 
 		  			<div>
-					<button class="btn btn-primary btn-block mt-4 fs-3 m-3" type="submit">Registrar Capacitación</button>
+					<button class="btn btn-primary btn-block mt-4 fs-3 m-3" type="submit" >Registrar Capacitación</button>
 					<small id="finalHelp" class="form-text text-danger"> </small>
 		  			</div>
 				  </form>
 
 				</div>
 			  </main>
-			  <!-- Fin Codigo formulario Capacitacion -->
+			  <!-- Fin Codigo formulario Capacitacion -->		  
 			  
+
 		  <script src="https://code.jquery..com/jquery-3.6.0.min.js"></script>
-		  <script src="js/app.js"></script>
+		  
 		</div>
 		
 		<!-- Footer -->
